@@ -1,0 +1,9 @@
+node_modules
+build/
+.history/
+*.log*
+chrome-user-data
+.vscode
+*.swp
+*.swo
+.module-cache
