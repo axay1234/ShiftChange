@@ -75,7 +75,7 @@ class NewReport extends React.Component{
                 <Card.Body>
                   <Row>
                     <Col md={12}>
-                      <label htmlFor="basic-url">Road Closures</label>
+                      <label htmlFor="basic-url">Shift Safety Topic</label>
                       <InputGroup className="mb-3">
                         <Form.Control
                           as="textarea"
@@ -110,11 +110,20 @@ class NewReport extends React.Component{
                         />
                       </InputGroup>
 
+                      <label htmlFor="basic-url">Whats Next To be Done</label>
+                      <InputGroup className="mb-3">
+                        <Form.Control
+                          as="textarea"
+                          rows="3"
+                          name="WhatsNext"
+                        />
+                      </InputGroup>
+
                       <label htmlFor="basic-url">SOPs</label>
                       <InputGroup className="mb-3">
                         <Form.Control as="textarea" rows="3" name="SOPs" />
                       </InputGroup>
-
+{/* 
                       <label htmlFor="basic-url">MOCs</label>
                       <InputGroup className="mb-3">
                         <Form.Control as="textarea" rows="3" name="MOCs" />
@@ -132,7 +141,7 @@ class NewReport extends React.Component{
                           rows="3"
                           name="OutofService"
                         />
-                      </InputGroup>
+                      </InputGroup> */}
                     </Col>
                   </Row>
                 </Card.Body>
@@ -178,6 +187,10 @@ class NewReport extends React.Component{
                           </tr>
                         </tbody>
                       </Table>
+                      <label htmlFor="basic-url">Steps To Remedy The Constraint</label>
+                      <InputGroup className="mb-3">
+                        <Form.Control as="textarea" rows="3" name="SOPs" />
+                      </InputGroup>
                     </Col>
                   </Row>
                 </Card.Body>
@@ -252,7 +265,16 @@ class NewReport extends React.Component{
                         />
                       </InputGroup>
 
-                      <label htmlFor="basic-url">Work Orders</label>
+                      <label htmlFor="basic-url">EAM / SAP scheduled work</label>
+                      <InputGroup className="mb-3">
+                        <Form.Control
+                          as="textarea"
+                          rows="3"
+                          name="EAPSAPSheduledWork"
+                        />
+                      </InputGroup>
+
+                      {/* <label htmlFor="basic-url">Work Orders</label>
                       <InputGroup className="mb-3">
                         <Form.Control
                           as="textarea"
@@ -264,7 +286,7 @@ class NewReport extends React.Component{
                       <label htmlFor="basic-url">Priority</label>
                       <InputGroup className="mb-3">
                         <Form.Control as="textarea" rows="3" name="Priority" />
-                      </InputGroup>
+                      </InputGroup> */}
                     </Col>
                   </Row>
                 </Card.Body>
@@ -365,6 +387,48 @@ class NewReport extends React.Component{
             <Col>
               <Card>
                 <Card.Header>
+                  <Card.Title as="h5"> </Card.Title>
+                </Card.Header>
+                <Card.Body>
+                  <Row>
+                    <Col md={12}>
+                    <label htmlFor="basic-url">Current MOCs</label>
+                      <InputGroup className="mb-3">
+                        <Form.Control
+                          as="textarea"
+                          rows="3"
+                          name="currentMocs"
+                        />
+                      </InputGroup>
+
+                      <label htmlFor="basic-url">Control of Defeat</label>
+                      <InputGroup className="mb-3">
+                        <Form.Control
+                          as="textarea"
+                          rows="3"
+                          name="controlOfDefeat"
+                        />
+                      </InputGroup>
+                      
+                      <label htmlFor="basic-url">Fire Equipment / Safety Systems</label>
+                      <InputGroup className="mb-3">
+                        <Form.Control
+                          as="textarea"
+                          rows="3"
+                          name="controlOfDefeat"
+                        />
+                      </InputGroup>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+          
+          <Row>
+            <Col>
+              <Card>
+                <Card.Header>
                   <Card.Title as="h5">Tank Levels</Card.Title>
                 </Card.Header>
                 <Card.Body>
@@ -403,7 +467,7 @@ class NewReport extends React.Component{
                     </Col>
                     <Col md={12}>
                       <label htmlFor="basic-url">
-                        Tanks Additional Infomation
+                        Tanks Additional Information
                       </label>
                       <InputGroup className="mb-3">
                         <Form.Control as="textarea" rows="3" />
@@ -447,6 +511,24 @@ class NewReport extends React.Component{
                     <Col md={12}>
                       <InputGroup className="mb-3">
                         <Form.Control as="textarea" rows="3" name="TimeSheet" />
+                      </InputGroup>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Card>
+                <Card.Header>
+                  <Card.Title as="h5">Improvement Ideas</Card.Title>
+                </Card.Header>
+                <Card.Body>
+                  <Row>
+                    <Col md={12}>
+                      <InputGroup className="mb-3">
+                        <Form.Control as="textarea" rows="3" name="improvement Ideas" />
                       </InputGroup>
                     </Col>
                   </Row>
