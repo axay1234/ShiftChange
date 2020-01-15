@@ -13,6 +13,8 @@ import Aux from "../../../hoc/_Aux";
 import getCurrentDate from "../../helper";
 import API from "../../../api";
 import ProductionSupervisorReport from "./ProductionSupervisorReport";
+import AreaSupervisorReport from "./AreaSupervisorReport";
+import AreaAReport from "./AreaAReport";
 
 class AllReports extends React.Component{
   constructor(props) {
@@ -63,9 +65,10 @@ class AllReports extends React.Component{
         return (
             <Form onSubmit={this.handleSubmit}>
                 <Aux>
-                    <Row>
+
                         <ProductionSupervisorReport />
-                    </Row>
+                        <AreaSupervisorReport />
+                    <AreaAReport />
                     <Row>
                         <Col>
                             <Card>

@@ -23,14 +23,14 @@ export default {
       children: [
         {
           id: "newreport",
-          title: "New Report",
+          title: "All Reports",
           type: "item",
           icon: "icon-ui",
           url: "/newreport"
         },
         {
           id: "allreports",
-          title: "All Reports",
+          title: "Shift Report",
           type: "item",
           icon: "icon-ui",
           url: "/allreports/"

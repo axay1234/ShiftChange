@@ -26,7 +26,7 @@ class ProductionSupervisorReport extends React.Component {
     // * Render form
     render() {
         return (
-
+            <Row>
             <Col>
                 <Row>
                     <Col>
@@ -36,6 +36,12 @@ class ProductionSupervisorReport extends React.Component {
                                     Production Supervisor Report
                                 </Card.Title>
                             </Card.Header>
+                        </Card>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Card>
                             <Card.Body>
                                 <Row>
                                     <Col md={12}>
@@ -240,6 +246,7 @@ class ProductionSupervisorReport extends React.Component {
                     </Col>
                 </Row> */}
             </Col>
+            </Row>
         );
     }
 }
