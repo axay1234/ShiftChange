@@ -27,7 +27,7 @@ const OtherSamplePage = React.lazy(() => import('./Demo/Other/SamplePage'));
 const OtherDocs = React.lazy(() => import('./Demo/Other/Docs'));
 const ShiftReport = React.lazy(() => import('./App/components/ShiftReport'));
 const ProductionSupervisor = React.lazy(() => import('./App/components/ProductionSupervisor'));
-const NewReport = React.lazy(() => import('./App/components/NewReport'));
+const NewReport = React.lazy(() => import('./App/components/reports/AllReports'));
 const AllReports = React.lazy(() => import('./App/components/AllReports'));
 const MyReports = React.lazy(() => import('./App/components/MyReports'));
 const AreaSupervisor = React.lazy(() => import('./App/components/AreaSupervisor'));
@@ -51,7 +51,7 @@ const routes = [
     { path: '/docs', exact: true, name: 'Documentation', component: OtherDocs },
     { path: '/shiftreport', exact: true, name: 'ShiftReport', component: ShiftReport },
     { path: '/productionsupervisor', exact: true, name: 'ProductionSupervisor', component: ProductionSupervisor },
-    { path: '/newreport', exact: true, name: 'NewReport', component: NewReport },
+    { path: '/newreport', exact: true, name: 'All Reports', component: NewReport },
     { path: '/allreports', exact: true, name: 'AllReports', component: AllReports },
     { path: '/myreports', exact: true, name: 'MyReports', component: MyReports },
     { path: '/areasupervisor', exact: true, name: 'AreaSupervisor', component: AreaSupervisor },
