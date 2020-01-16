@@ -20,13 +20,21 @@ class YesNoInput extends React.Component {
     }
 
     onClick = (value) => {
-        this.setState({ showInput: value })
+        this.setState({ showInput: value });
+        if(value === false){
+            this.onChange({target:{id:this.props.id, value:""}})
+        }
     }
 
+    onChange = (e) =>{
+        if(this.props.handleChange){
+            this.props.handleChange(e);
+        }
+    }
 
     // * Render form
     render() {
-        const {label, id} = this.props;
+        const {label, id, reportType, value} = this.props;
         return (
             <>
                 <label htmlFor="basic-url">{label}</label>
@@ -54,7 +62,7 @@ class YesNoInput extends React.Component {
                     </Col>
                 </Row>
                 {this.state.showInput && <InputGroup className="mb-3">
-                    <Form.Control as="textarea" rows="3" name={id} />
+                    <Form.Control as="textarea" value={this.props[id]} rows="3" onChange={this.onChange} data-reportType={reportType} id={id} />
                 </InputGroup>}
             </>
 

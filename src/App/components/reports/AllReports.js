@@ -23,32 +23,53 @@ class AllReports extends React.Component{
     };
   }
 // * Handle button click
-  handleChange = event => {
+  handleChange = (event) => {
+    console.log(event.target.id);
     console.log(event.target.value);
-    //this.setState({ [event.target.name]: event.target.value });
-    this.setState({
-      [event.target.name]: event.target.value
-    });
+    this.setState({ [event.target.id]: event.target.value });
   };
+
+  getPSRRequest = () =>{
+    let pSRRequest = {};
+    
+    return pSRRequest;
+
+  }
+
+  getASRRequest = () =>{
+
+  }
 
   // * Submit form to API. POST
   handleSubmit = event => {
-    event.preventDefault();    
-    API.post(
-      "shiftreport",
-      {
-        Id: "1",
-        ReportName: "SF0112182019",
-        SafetyTopic: this.refs.SafetyTopic.value,
-        LMRAs:this.refs.LMRAs.value        
-      },
-      { headers: { "Content-Type": "application/json" } }
-    )
-      .then(response => {
-        //this.props.history.push("/");
-        console.log(response.data);
-      })
-      .catch(err => console.log(err));    
+    event.preventDefault(); 
+
+    //create request
+    let requestObj = {};
+    requestObj.Area_ID = 1;
+    requestObj.Shift = "1";
+    requestObj.User_ID = 1;
+
+    requestObj = {...requestObj, ...this.getPSRRequest()};
+    requestObj = {...requestObj, ...this.getASRRequest()};
+    console.log(requestObj);
+  
+
+    // API.post(
+    //   "shiftreport",
+    //   {
+    //     Id: "1",
+    //     ReportName: "SF0112182019",
+    //     SafetyTopic: this.refs.SafetyTopic.value,
+    //     LMRAs:this.refs.LMRAs.value        
+    //   },
+    //   { headers: { "Content-Type": "application/json" } }
+    // )
+    //   .then(response => {
+    //     //this.props.history.push("/");
+    //     console.log(response.data);
+    //   })
+    //   .catch(err => console.log(err));    
   };
 
   //* Get data from API. GET
@@ -66,7 +87,7 @@ class AllReports extends React.Component{
             <Form onSubmit={this.handleSubmit}>
                 <Aux>
 
-                        <ProductionSupervisorReport />
+                        <ProductionSupervisorReport handleChange={this.handleChange}/>
                         <AreaSupervisorReport />
                     <AreaAReport />
                     <Row>

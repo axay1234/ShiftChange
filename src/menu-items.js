@@ -29,6 +29,13 @@ export default {
           url: "/newreport"
         },
         {
+          id: "samplereport",
+          title: "Sample Reports",
+          type: "item",
+          icon: "icon-ui",
+          url: "/samplereport"
+        },
+        {
           id: "allreports",
           title: "Shift Report",
           type: "item",

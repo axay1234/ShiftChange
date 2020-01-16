@@ -14,6 +14,7 @@ import Aux from "../../../hoc/_Aux";
 import getCurrentDate from "../../helper";
 import API from "../../../api";
 import YesNoInput from "./YesNoFormInput";
+import YesTextInput from "./YesTextInput";
 
 class ProductionSupervisorReport extends React.Component {
     constructor(props) {
@@ -45,23 +46,15 @@ class ProductionSupervisorReport extends React.Component {
                             <Card.Body>
                                 <Row>
                                     <Col md={12}>
-                                        <label htmlFor="basic-url">Road Closures</label>
-                                        <InputGroup className="mb-3">
-                                            <Form.Control
-                                                as="textarea"
-                                                rows="3"
-                                                name="SafetyTopic"
-                                            />
-                                        </InputGroup>
-
-                                        <YesNoInput label="First Maintenance Start" id="LMRAs" />
+                                        <YesTextInput  label="Road Closures" id="PSR_RoadClosures" reportType="PSR" />
+                                        <YesNoInput  label="First Maintenance Start" id="PSR_FirstMaintainStart" reportType="PSR" />
                                     </Col>
                                 </Row>
                             </Card.Body>
                         </Card>
                     </Col>
                 </Row>
-                <Row>
+                {/* <Row>
                     <Col>
                         <Card>
                             <Card.Header>
@@ -131,8 +124,8 @@ class ProductionSupervisorReport extends React.Component {
                             </Card.Body>
                         </Card>
                     </Col>
-                </Row>
-                <Row>
+                </Row> */}
+                {/* <Row>
                     <Col>
                         <Card>
                             <Card.Header>
@@ -197,7 +190,7 @@ class ProductionSupervisorReport extends React.Component {
                             </Card.Body>
                         </Card>
                     </Col>
-                </Row>
+                </Row> */}
                 <Row>
                     <Col>
                         <Card>
@@ -205,15 +198,15 @@ class ProductionSupervisorReport extends React.Component {
                                 <Card.Title as="h5"> </Card.Title>
                             </Card.Header>
                             <Card.Body>
-                                <YesNoInput label="Abnormal Operations" id="abnormalOperations" />
+                                <YesNoInput  label="Abnormal Operations" id="PSR_PSR_AbnormalOperations" />
 
-                                <YesNoInput label="Operation Problems" id="operationProblems" />
+                                {/* <YesNoInput label="Operation Problems" id="operationProblems" /> */}
 
-                                <YesNoInput label="Conditions" id="conditions" />
+                                <YesNoInput  label="Conditions" id="PSR_Conditions" />
 
-                                <YesNoInput label="Counter Measures" id="counterMeasures" />
+                                <YesNoInput  label="Counter Measures" id="PSR_CounterMeasures" />
 
-                                <YesNoInput label="Follow Ups" id="followUps" />
+                                <YesNoInput label="Notifications" id="PSR_Notifications" />
                             </Card.Body>
                         </Card>
                     </Col>
@@ -222,7 +215,7 @@ class ProductionSupervisorReport extends React.Component {
                     <Col>
                         <Card>
                             <Card.Body>
-                                <YesNoInput label="Feedstock Changes" id="feedstockChanges" />
+                                <YesNoInput  label="Feedstock Changes" id="PSR_feedstockChanges" />
                             </Card.Body>
                         </Card>
                     </Col>
@@ -231,7 +224,7 @@ class ProductionSupervisorReport extends React.Component {
                     <Col>
                         <Card>
                             <Card.Body>
-                                <YesNoInput label="Lineup Changes" id="lineupChanges" />
+                                <YesNoInput label="Lineup Changes" id="PSR_lineupChanges" />
                             </Card.Body>
                         </Card>
                     </Col>
