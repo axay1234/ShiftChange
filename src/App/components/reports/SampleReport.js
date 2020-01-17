@@ -67,7 +67,7 @@ class SampleReport extends React.Component {
                 for (var key in existingState) {
                     existingState[key] = "";
                 }
-                this.setState({ formStatus: "SUCCESS", ...existingState });
+                this.setState({ ...existingState, formStatus: "SUCCESS", });
             })
             .catch(err => {
                 console.log(err)
