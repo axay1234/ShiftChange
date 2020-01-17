@@ -1,0 +1,1 @@
+export const QUERY_PARAM_AREA_ID = 'areaId';

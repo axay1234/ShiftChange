@@ -46,6 +46,7 @@ class ProductionSupervisorReport extends React.Component {
                             <Card.Body>
                                 <Row>
                                     <Col md={12}>
+                                    <YesTextInput {...this.props} handleChange={this.props.handleChange} label="Road Closures" id="RoadClosures" reportType="PSR" />
                                         <YesTextInput  label="Road Closures" id="PSR_RoadClosures" reportType="PSR" />
                                         <YesNoInput  label="First Maintenance Start" id="PSR_FirstMaintainStart" reportType="PSR" />
                                     </Col>
