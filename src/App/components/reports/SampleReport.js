@@ -17,6 +17,7 @@ import ProductionSupervisorReport from "./ProductionSupervisorReport";
 import AreaSupervisorReport from "./AreaSupervisorReport";
 import AreaAReport from "./AreaAReport";
 import SampleFormFields from "./SamplFormFields";
+import { getQueryParamValue } from "../../../util/Util";
 
 class SampleReport extends React.Component {
     constructor(props) {
@@ -24,6 +25,7 @@ class SampleReport extends React.Component {
         this.state = {
             formStatus : "NEW"
         };
+        console.log(getQueryParamValue(props,'areaId'))
     }
     // * Handle button click
     handleChange = (event) => {
@@ -108,7 +110,7 @@ class SampleReport extends React.Component {
                             </Card>
                         </Col>
                     </Row>}
-                    <SampleFormFields {...this.state}  handleChange={this.handleChange} />
+                    {/* <SampleFormFields {...this.state}  handleChange={this.handleChange} /> */}
                     <Row>
                         <Col>
                             <Card>
