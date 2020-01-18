@@ -32,7 +32,7 @@ class YesTextInput extends React.Component {
             <>
                 <label htmlFor="basic-url">{label}</label>
                 <InputGroup className="mb-3">
-                    <Form.Control as="textarea" value={this.props[id]} onChange={this.onChange} data-reportType={reportType} rows="3" id={id} />
+                    <Form.Control as="textarea" value={this.props[id]} onChange={this.onChange} data-reportType={reportType} rows="3" id={`${reportType}_${id}`} />
                 </InputGroup>
             </>
 

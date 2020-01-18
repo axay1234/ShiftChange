@@ -46,16 +46,15 @@ class ProductionSupervisorReport extends React.Component {
                             <Card.Body>
                                 <Row>
                                     <Col md={12}>
-                                    <YesTextInput {...this.props} handleChange={this.props.handleChange} label="Road Closures" id="RoadClosures" reportType="PSR" />
-                                        <YesTextInput  label="Road Closures" id="PSR_RoadClosures" reportType="PSR" />
-                                        <YesNoInput  label="First Maintenance Start" id="PSR_FirstMaintainStart" reportType="PSR" />
+                                        <YesTextInput  {...this.props} handleChange={this.props.handleChange}  label="Road Closures" id="RoadClosures" reportType="PSR" />
+                                        <YesNoInput  {...this.props} handleChange={this.props.handleChange} label="First Maintenance Start" id="FirstMaintainStart" reportType="PSR" />
                                     </Col>
                                 </Row>
                             </Card.Body>
                         </Card>
                     </Col>
                 </Row>
-                {/* <Row>
+                <Row>
                     <Col>
                         <Card>
                             <Card.Header>
@@ -67,33 +66,30 @@ class ProductionSupervisorReport extends React.Component {
                                         <Table responsive hover>
                                             <thead>
                                                 <tr>
-                                                    <th>#</th>
-                                                    <th>First Name</th>
-                                                    <th>Last Name</th>
-                                                    <th>Username</th>
+                                                    <th>Tag Id #</th>
+                                                    <th>Target Value</th>
+                                                    <th>Achieved</th>
+                                                    <th>Constraints</th>
+                                                    <th>Instruction</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
+                                                    <td>AGO</td>
+                                                    <td>Test_1</td>
+                                                    <td>Test_1</td>
+                                                    <td><Form.Control type="text" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>AGO</td>
+                                                    <td>Test_1</td>
+                                                    <td>Test_1</td>
+                                                    <td><Form.Control type="text" /></td>
                                                 </tr>
                                             </tbody>
                                         </Table>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col md={12}>
-                                        <InputGroup className="mb-3">
-                                            <Form.Control
-                                                as="textarea"
-                                                rows="3"
-                                                name="SafetyTopic"
-                                            />
-                                        </InputGroup>
-
                                     </Col>
                                 </Row>
                                 <Row>
@@ -125,7 +121,7 @@ class ProductionSupervisorReport extends React.Component {
                             </Card.Body>
                         </Card>
                     </Col>
-                </Row> */}
+                </Row>
                 {/* <Row>
                     <Col>
                         <Card>
@@ -199,15 +195,15 @@ class ProductionSupervisorReport extends React.Component {
                                 <Card.Title as="h5"> </Card.Title>
                             </Card.Header>
                             <Card.Body>
-                                <YesNoInput  label="Abnormal Operations" id="PSR_PSR_AbnormalOperations" />
+                                <YesNoInput  {...this.props} handleChange={this.props.handleChange}
+                                    label="Abnormal Operations" id="PSR_AbnormalOperations" reportType="PSR" />
+                                <YesNoInput  {...this.props} handleChange={this.props.handleChange}
+                                    label="Operat" id="PSR_AbnormalOperations" reportType="PSR" />
+                                <YesNoInput label="Conditions" id="Conditions" reportType="PSR" />
 
-                                {/* <YesNoInput label="Operation Problems" id="operationProblems" /> */}
+                                <YesNoInput label="Counter Measures" id="CounterMeasures" reportType="PSR" />
 
-                                <YesNoInput  label="Conditions" id="PSR_Conditions" />
-
-                                <YesNoInput  label="Counter Measures" id="PSR_CounterMeasures" />
-
-                                <YesNoInput label="Notifications" id="PSR_Notifications" />
+                                <YesNoInput label="Notifications" id="Notifications" reportType="PSR" /> 
                             </Card.Body>
                         </Card>
                     </Col>
@@ -216,7 +212,8 @@ class ProductionSupervisorReport extends React.Component {
                     <Col>
                         <Card>
                             <Card.Body>
-                                <YesNoInput  label="Feedstock Changes" id="PSR_feedstockChanges" />
+                                <YesNoInput   {...this.props} handleChange={this.props.handleChange} 
+                                 label="Feedstock Changes" id="FeedstockChanges" reportType="PSR" />
                             </Card.Body>
                         </Card>
                     </Col>
@@ -225,7 +222,8 @@ class ProductionSupervisorReport extends React.Component {
                     <Col>
                         <Card>
                             <Card.Body>
-                                <YesNoInput label="Lineup Changes" id="PSR_lineupChanges" />
+                                <YesNoInput {...this.props} handleChange={this.props.handleChange}
+                                    label="Lineup Changes" id="LineupChanges" reportType="PSR" />
                             </Card.Body>
                         </Card>
                     </Col>

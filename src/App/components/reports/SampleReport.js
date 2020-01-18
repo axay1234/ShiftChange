@@ -118,9 +118,9 @@ class SampleReport extends React.Component {
                             </Card>
                         </Col>
                     </Row>}
-                    <SampleFormFields {...this.state}  handleChange={this.handleChange} />
-                    {/* <ProductionSupervisorReport {...this.state} handleChange={this.handleChange} />
-                    <AreaSupervisorReport  {...this.state} handleChange={this.handleChange} />
+                    {/* <SampleFormFields {...this.state}  handleChange={this.handleChange} /> */}
+                    <ProductionSupervisorReport {...this.state} handleChange={this.handleChange} />
+                    {/*<AreaSupervisorReport  {...this.state} handleChange={this.handleChange} />
                     <AreaAReport  {...this.state} handleChange={this.handleChange} /> */}
                     <Row>
                         <Col>

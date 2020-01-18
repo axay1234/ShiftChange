@@ -62,7 +62,7 @@ class YesNoInput extends React.Component {
                     </Col>
                 </Row>
                 {this.state.showInput && <InputGroup className="mb-3">
-                    <Form.Control as="textarea" value={this.props[id]} rows="3" onChange={this.onChange} data-reportType={reportType} id={id} />
+                    <Form.Control as="textarea" value={this.props[id]} rows="3" onChange={this.onChange} data-reportType={reportType} id={`${reportType}_${id}`} />
                 </InputGroup>}
             </>
 
