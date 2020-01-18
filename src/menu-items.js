@@ -29,11 +29,11 @@ export default {
         //   url: "/newreport"
         // },
         {
-          id: "allreports",
+          id: "shiftreports",
           title: "Shift Report",
           type: "item",
           icon: "icon-ui",
-          url: "/allreports/"
+          url: "/shiftreports/"
         },
         {
           id: "myreports",
@@ -57,10 +57,16 @@ export default {
           icon: "feather icon-file",
           children: [
             {
-              id: "samplereport",
+              id: "newReport",
+              title: "New Report",
+              type: "item",
+              url: "/newReport?areaId=1"
+            },
+            {
+              id: "allreports",
               title: "All Reports",
               type: "item",
-              url: "/samplereport?areaId=1"
+              url: "/allreports?areaId=1"
             },
             {
               id: "productionsupervisorreport",
@@ -107,10 +113,16 @@ export default {
           icon: "feather icon-file",
           children: [
             {
-              id: "samplereport",
+              id: "newReport",
+              title: "New Report",
+              type: "item",
+              url: "/newReport?areaId=2"
+            },
+            {
+              id: "allreports",
               title: "All Reports",
               type: "item",
-              url: "/samplereport?areaId=2"
+              url: "/allreports?areaId=2"
             },
             {
               id: "productionsupervisorreport",
@@ -157,10 +169,16 @@ export default {
           icon: "feather icon-file",
           children: [
             {
-              id: "samplereport",
+              id: "newReport",
+              title: "New Report",
+              type: "item",
+              url: "/newReport?areaId=3"
+            },
+            {
+              id: "allreports",
               title: "All Reports",
               type: "item",
-              url: "/samplereport?areaId=3"
+              url: "/allreports?areaId=3"
             },
             {
               id: "productionsupervisorreport",
@@ -207,10 +225,16 @@ export default {
           icon: "feather icon-file",
           children: [
             {
-              id: "samplereport",
+              id: "newReport",
+              title: "New Report",
+              type: "item",
+              url: "/newReport?areaId=4"
+            },
+            {
+              id: "allreports",
               title: "All Reports",
               type: "item",
-              url: "/samplereport?areaId=4"
+              url: "/allreports?areaId=4"
             },
             {
               id: "productionsupervisorreport",

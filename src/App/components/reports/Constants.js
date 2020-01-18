@@ -1,3 +1,90 @@
 export const FORM_STATUS_SUCCESS = 'SUCCESS';
 export const FORM_STATUS_ERROR = 'ERROR';
 export const FORM_STATUS_NEW = 'NEW';
+
+export const JSON_LIST_OF_REPORTS = [
+    {
+      "User_Master": {
+        "User_ID": 1,
+        "User_Name": "Mike BeCraft",
+        "User_EmployeeID": "2701",
+        "User_EmailAddress": "MikeBeCraft@delekus.com",
+        "User_mobile": "4765688274",
+        "Active": "A",
+        "LastUpdatedBy": null
+      },
+      "Report_ID": 1,
+      "RoadClosures": "Test_Rc",
+      "FirstMaintainStart": "Test_Fms",
+      "PSR_AbnormalOperations": "Test_Ao",
+      "FeedstockChanges": "Test_Fsc",
+      "LineupChanges": "Test_Lc",
+      "SafetyMeetings": "Test_Sm   ",
+      "CR_AbnormalOperations": "Test_Ao",
+      "HighPriorityAlarms": "Test_Hpa",
+      "Impairment_to_fire_protection_systems": "Test_Ifp",
+      "AlarmsInhibited": "Test_Ai",
+      "FR_AbnormalOperations": "Test_Ao",
+      "Maintenance": "Test_Mt   ",
+      "CreatedDate": "2019-01-08T00:00:00",
+      "UpdatedDate": "2019-01-08T00:00:00",
+      "CreatedBy": "Dev                                               ",
+      "UpdatedBy": "Dev                                               ",
+      "Shift": "1    ",
+      "Area_ID": 1,
+      "User_ID": 1
+    },
+    {
+      "Report_ID": 2,
+      "RoadClosures": "Test2_RC",
+      "FirstMaintainStart": "Test2_Fms",
+      "PSR_AbnormalOperations": "Test2_Ao",
+      "FeedstockChanges": "Test2_Fsc",
+      "LineupChanges": "Test2_Lc",
+      "SafetyMeetings": "Test2_Sm  ",
+      "CR_AbnormalOperations": "Test2_Ao",
+      "HighPriorityAlarms": "Test2_Hpa",
+      "Impairment_to_fire_protection_systems": "Test2_Ifp",
+      "AlarmsInhibited": "Test2_Ai",
+      "FR_AbnormalOperations": "Test2_Ao",
+      "Maintenance": "Test2_Mt  ",
+      "CreatedDate": "2019-01-08T00:00:00",
+      "UpdatedDate": "2019-01-08T00:00:00",
+      "CreatedBy": "Dev                                               ",
+      "UpdatedBy": "Dev                                               ",
+      "Shift": "1    ",
+      "Area_ID": 1,
+      "User_ID": 2
+    },
+    {
+      "User_Master": {
+        "User_ID": 1,
+        "User_Name": "Mike BeCraft",
+        "User_EmployeeID": "2701",
+        "User_EmailAddress": "MikeBeCraft@delekus.com",
+        "User_mobile": "4765688274",
+        "Active": "A",
+        "LastUpdatedBy": null
+      },
+      "Report_ID": 4,
+      "RoadClosures": "I-65",
+      "FirstMaintainStart": "Test_EMS",
+      "PSR_AbnormalOperations": "Test AO",
+      "FeedstockChanges": "Test FSC",
+      "LineupChanges": "Test LC",
+      "SafetyMeetings": "Test_SM   ",
+      "CR_AbnormalOperations": "Test AO",
+      "HighPriorityAlarms": "Test HPA",
+      "Impairment_to_fire_protection_systems": "Test Fire systems",
+      "AlarmsInhibited": "test ALARMS",
+      "FR_AbnormalOperations": "Test AO",
+      "Maintenance": "test M    ",
+      "CreatedDate": "2020-01-10T12:11:42.287",
+      "UpdatedDate": "2020-01-10T12:11:42.287",
+      "CreatedBy": "HSimpson                                          ",
+      "UpdatedBy": "HSimpson                                          ",
+      "Shift": "1    ",
+      "Area_ID": 1,
+      "User_ID": 1
+    }
+  ];
