@@ -15,6 +15,8 @@ import API from "../../../api";
 import ProductionSupervisorReport from "./ProductionSupervisorReport";
 import AreaSupervisorReport from "./AreaSupervisorReport";
 import AreaAReport from "./AreaAReport";
+import ConsoleReport from "./ConsoleReport";
+import FieldReport from "./FieldReport";
 
 class AllReports extends React.Component{
   constructor(props) {
@@ -90,6 +92,8 @@ class AllReports extends React.Component{
                         <ProductionSupervisorReport handleChange={this.handleChange}/>
                         <AreaSupervisorReport />
                     <AreaAReport />
+                    <ConsoleReport />
+                    <FieldReport />
                     <Row>
                         <Col>
                             <Card>
