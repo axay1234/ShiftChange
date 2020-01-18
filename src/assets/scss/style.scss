@@ -55,3 +55,14 @@ File: style.css
 @import "partials/other/icon-lauouts";
 
 @import "partials/third-party/third-party";
+
+#user-filter-drop-down{
+
+  .btn{
+    color: #3f4d67;
+    &:hover, &:visited {
+      color: #04a9f5;
+     }
+  }
+
+}
