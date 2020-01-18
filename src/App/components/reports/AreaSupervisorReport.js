@@ -53,9 +53,11 @@ class AreaSupervisorReport extends React.Component {
                     <Row>
                         <Col>
                             <Card>
-
+                            <Card.Header>
+                                <Card.Title as="h5">Environmental</Card.Title>
+                            </Card.Header>
                                 <Card.Body>
-                                    <YesTextInput label="Environmental" id="environmental"  reportType="ASR"/>
+                                    {/* <YesTextInput label="Environmental" id="environmental"  reportType="ASR"/> */}
                                     <YesTextInput label="Incidents" id="Incidents"  reportType="ASR"/>
                                     <YesTextInput label="Near Misses" id="NearMisses"  reportType="ASR"/>
                                     <YesTextInput label="Draining of Equipment" id="DrainingofEquipment"  reportType="ASR"/>
@@ -71,17 +73,55 @@ class AreaSupervisorReport extends React.Component {
                     <Row>
                         <Col>
                             <Card>
-                            <Card.Body>
-                                    <YesNoInput label="MOC" id="MOC"  reportType="ASR"/>
-                                    <YesTextInput label="Number" id="Number"  reportType="ASR"/>
-                                    <YesTextInput label="Title" id="Title"  reportType="ASR"/>
-                                    <YesTextInput label="Status" id="Status"  reportType="ASR"/>
-                                    <YesTextInput label="Authorize" id="Authorize"  reportType="ASR"/>
-                                    <YesTextInput label="Training" id="Training"  reportType="ASR"/>
+                                <Card.Header>
+                                    <Card.Title as="h5">MOC</Card.Title>
+                                </Card.Header>
+                                <Card.Body>
+                                    <YesTextInput label="Number" id="Number" reportType="ASR" />
+                                    <YesTextInput label="Title" id="Title" reportType="ASR" />
+                                    <YesTextInput label="Status" id="Status" reportType="ASR" />
+                                    <YesNoInput label="Authorize For Use" id="Authorize" reportType="ASR" />
+                                    <YesNoInput  label="Training Notification Complete" id="Training" reportType="ASR" />
                                 </Card.Body>
                             </Card>
                         </Col>
                     </Row>
+                    <Row>
+                    <Col>
+                        <Card>
+                            <Card.Header>
+                                <Card.Title as="h5">Inventory Tank Levels</Card.Title>
+                            </Card.Header>
+                            <Card.Body>
+                                <Row>
+                                    <Col md={12}>
+                                        <Table responsive hover>
+                                            <thead>
+                                                <tr>
+                                                    <th>Id #</th>
+                                                    <th>Target Value</th>
+                                                    <th>Achieved</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>2000</td>
+                                                    <td>2917</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>2000</td>
+                                                    <td>2917</td>
+                                                </tr>
+                                            </tbody>
+                                        </Table>
+                                    </Col>
+                                </Row>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row> 
                     {/* <Row>
                     <Col>
                         <Card>

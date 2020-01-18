@@ -235,6 +235,42 @@ class ProductionSupervisorReport extends React.Component {
                         </Card>
                     </Col>
                 </Row>
+                <Row>
+                    <Col>
+                        <Card>
+                            <Card.Header>
+                                <Card.Title as="h5">Inventory Tank Levels</Card.Title>
+                            </Card.Header>
+                            <Card.Body>
+                                <Row>
+                                    <Col md={12}>
+                                        <Table responsive hover>
+                                            <thead>
+                                                <tr>
+                                                    <th>Id #</th>
+                                                    <th>Target Value</th>
+                                                    <th>Achieved</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>2000</td>
+                                                    <td>2917</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>2000</td>
+                                                    <td>2917</td>
+                                                </tr>
+                                            </tbody>
+                                        </Table>
+                                    </Col>
+                                </Row>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row> 
                 {/* <Row>
                     <Col>
                         <Card>
