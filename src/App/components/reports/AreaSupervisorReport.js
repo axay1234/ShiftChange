@@ -45,10 +45,7 @@ class AreaSupervisorReport extends React.Component {
                             <Card>
 
                                 <Card.Body>
-                                    <YesTextInput label="Safety Meetings" id="safetyMeetings" />
-                                    <YesTextInput label="Environmental" id="environmental" />
-                                    <YesTextInput label="Incidents" id="incidents" />
-                                    <YesTextInput label="Near Misses" id="nearMisses" />
+                                    <YesTextInput label="Safety Meetings" id="SafetyMeetings" reportType="ASR"/>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -56,11 +53,35 @@ class AreaSupervisorReport extends React.Component {
                     <Row>
                         <Col>
                             <Card>
-                                <Card.Body></Card.Body>
+
+                                <Card.Body>
+                                    <YesTextInput label="Environmental" id="environmental"  reportType="ASR"/>
+                                    <YesTextInput label="Incidents" id="Incidents"  reportType="ASR"/>
+                                    <YesTextInput label="Near Misses" id="NearMisses"  reportType="ASR"/>
+                                    <YesTextInput label="Draining of Equipment" id="DrainingofEquipment"  reportType="ASR"/>
+                                    <YesTextInput label="Venting" id="Venting"  reportType="ASR"/>
+                                    <YesTextInput label="Venting Flare" id="Venting_Flare"  reportType="ASR"/>
+                                    <YesTextInput label="Venting Atmosphere" id="Venting_Atmosphere"  reportType="ASR"/>
+                                    <YesTextInput label="Deviations" id="Deviations"  reportType="ASR"/>
+                                    <YesTextInput label="Special Monitoring" id="SpecialMonitoring"  reportType="ASR"/>
+                                </Card.Body>
                             </Card>
                         </Col>
                     </Row>
-
+                    <Row>
+                        <Col>
+                            <Card>
+                            <Card.Body>
+                                    <YesNoInput label="MOC" id="MOC"  reportType="ASR"/>
+                                    <YesTextInput label="Number" id="Number"  reportType="ASR"/>
+                                    <YesTextInput label="Title" id="Title"  reportType="ASR"/>
+                                    <YesTextInput label="Status" id="Status"  reportType="ASR"/>
+                                    <YesTextInput label="Authorize" id="Authorize"  reportType="ASR"/>
+                                    <YesTextInput label="Training" id="Training"  reportType="ASR"/>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
                     {/* <Row>
                     <Col>
                         <Card>
