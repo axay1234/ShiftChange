@@ -60,6 +60,10 @@ class AllReports extends React.Component{
     });
   }
 
+  openReport = (e) =>{
+    this.props.history.push(`/newReport?areaId=${this.state.areadId}`)
+  } 
+
   getListOfUsers = () => {
     const userMap = {};
     const users = [];
@@ -95,12 +99,38 @@ class AllReports extends React.Component{
             <Col>
               <Card>
                 <Card.Header>
-                  <Row>
-                    <Col xs={8}>
+                <Row>
+                    <Col xs={4}>
                       <Card.Title as="h5">List of reports</Card.Title>
                     </Col>
-                    <Col id="user-filter-drop-down" xs={4}>
+                    <Col id="user-filter-drop-down" xs={4} className="text-left">
+                      <span className="manager-label">Area Manager</span>
+                    </Col>
+                    <Col id="user-filter-drop-down" xs={4} className="text-left">
+                      <span className="manager-label">Shift Manager</span>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col xs={4}>
+                      
+                    </Col>
+                    <Col id="user-filter-drop-down" xs={4} className="text-left">
                       <Dropdown alignRight={true}>
+                        <Dropdown.Toggle variant={'link'} id="dropdown-basic">
+                          {this.state.userName}
+                        </Dropdown.Toggle>
+                        <ul>
+                          <Dropdown.Menu>
+                            <li data-userName={"Select Manager"} onClick={this.onUserFilterChange}><a className="dropdown-item">Select Manager</a></li>
+                            {this.getListOfUsers().length > 0 && this.getListOfUsers().map(user => {
+                              return <li data-userName={user.User_Name} data-userId={user.User_ID} onClick={this.onUserFilterChange}><a className="dropdown-item" >{user.User_Name}</a></li>
+                            })}
+                          </Dropdown.Menu>
+                        </ul>
+                      </Dropdown>
+                    </Col>
+                    <Col id="user-filter-drop-down" xs={4} className="text-left">
+                    <Dropdown alignRight={true}>
                         <Dropdown.Toggle variant={'link'} id="dropdown-basic">
                           {this.state.userName}
                         </Dropdown.Toggle>
@@ -130,7 +160,7 @@ class AllReports extends React.Component{
                         </thead>
                         <tbody>
                           {this.getListOfReports().map(report => {
-                            return <tr>
+                            return <tr onClick={this.openReport}>
                               <th scope="row">1</th>
                               <td>{`Area ${report.Area_ID} Report`}</td>
                               <td>{formatDate(new Date(report.CreatedDate))}</td>
