@@ -21,19 +21,19 @@ export default {
       type: "group",
       icon: "icon-ui",
       children: [
+        // {
+        //   id: "newreport",
+        //   title: "All Reports",
+        //   type: "item",
+        //   icon: "icon-ui",
+        //   url: "/newreport"
+        // },
         {
-          id: "newreport",
-          title: "New Report",
+          id: "shiftreports",
+          title: "Shift Report",
           type: "item",
           icon: "icon-ui",
-          url: "/newreport"
-        },
-        {
-          id: "allreports",
-          title: "All Reports",
-          type: "item",
-          icon: "icon-ui",
-          url: "/allreports/"
+          url: "/shiftreports/"
         },
         {
           id: "myreports",
@@ -56,6 +56,18 @@ export default {
           type: "collapse",
           icon: "feather icon-file",
           children: [
+            {
+              id: "newReport",
+              title: "New Report",
+              type: "item",
+              url: "/newReport?areaId=1"
+            },
+            {
+              id: "allreports",
+              title: "All Reports",
+              type: "item",
+              url: "/allreports?areaId=1"
+            },
             {
               id: "productionsupervisorreport",
               title: "Production Supervisor Report",
@@ -101,6 +113,18 @@ export default {
           icon: "feather icon-file",
           children: [
             {
+              id: "newReport",
+              title: "New Report",
+              type: "item",
+              url: "/newReport?areaId=2"
+            },
+            {
+              id: "allreports",
+              title: "All Reports",
+              type: "item",
+              url: "/allreports?areaId=2"
+            },
+            {
               id: "productionsupervisorreport",
               title: "Production Supervisor Report",
               type: "item",
@@ -145,6 +169,18 @@ export default {
           icon: "feather icon-file",
           children: [
             {
+              id: "newReport",
+              title: "New Report",
+              type: "item",
+              url: "/newReport?areaId=3"
+            },
+            {
+              id: "allreports",
+              title: "All Reports",
+              type: "item",
+              url: "/allreports?areaId=3"
+            },
+            {
               id: "productionsupervisorreport",
               title: "Production Supervisor Report",
               type: "item",
@@ -188,6 +224,18 @@ export default {
           type: "collapse",
           icon: "feather icon-file",
           children: [
+            {
+              id: "newReport",
+              title: "New Report",
+              type: "item",
+              url: "/newReport?areaId=4"
+            },
+            {
+              id: "allreports",
+              title: "All Reports",
+              type: "item",
+              url: "/allreports?areaId=4"
+            },
             {
               id: "productionsupervisorreport",
               title: "Production Supervisor Report",

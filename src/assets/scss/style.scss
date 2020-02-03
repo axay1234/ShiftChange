@@ -49,9 +49,24 @@ File: style.css
 // Other
 @import "partials/other/chat";
 @import "partials/other/prism";
-@import "partials/other/Switches";
+//@import "partials/other/Switches";
 
 @import "partials/other/chart";
 @import "partials/other/icon-lauouts";
 
 @import "partials/third-party/third-party";
+
+#user-filter-drop-down{
+
+  .btn{
+    color: #3f4d67;
+    &:hover, &:visited {
+      color: #04a9f5;
+     }
+  }
+
+}
+
+.manager-label{
+  padding: 10px 20px;
+}
